@@ -1,14 +1,14 @@
 "use client";
 
-import { Button, Navbar } from "flowbite-react";
+import { Navbar } from "flowbite-react";
 import RV from "./RV"
 
 export default function NavBar() {
   return (
     <>
-      <Navbar fluid rounded>
+      <Navbar fluid rounded className='fixed w-full z-30'>
         <Navbar.Brand href="/">
-          <span className="self-center whitespace-nowrap text-xl text-rose-400 font-semibold">
+          <span className="self-center whitespace-nowrap text-2xl text-rose-400 font-semibold">
             Kinésiologie SM
           </span>
         </Navbar.Brand>

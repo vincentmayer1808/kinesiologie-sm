@@ -10,12 +10,12 @@ export default function RV() {
 
   return (
     <>
-      <Button
-        className="bg-rose-400"
+      <button
+        className="bg-rose-400 px-3 py-2 flex items-center justify-center font-medium text-center text-white rounded-lg hover:bg-teal-700 hover:scale-105 transtion-all duration-200 focus:ring-2 focus:ring-emerald-400"
         onClick={() => props.setOpenModal("form-elements")}
       >
         Prendre Rendez-Vous!
-      </Button>
+      </button>
       <Modal
         show={props.openModal === "form-elements"}
         size="md"
