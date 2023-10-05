@@ -12,7 +12,7 @@ export default function NavBar() {
             Kinésiologie SM
           </span>
         </Navbar.Brand>
-        <div className="flex md:order-2">
+        <div className="flex md:order-2 gap-2">
           <Navbar.Toggle />
           <RV/>
         </div>
