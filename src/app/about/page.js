@@ -45,7 +45,7 @@ const page = () => {
         <Link href="/services">EN SAVOIR PLUS</Link>
       </div>
       <div>
-        <h3>Études et formations</h3>
+        <h3>Études et formations</h3>
         <ul>
           <li>
             Formation &#8217;Health Behavior Change : From evidence to action&#8217;
@@ -63,7 +63,6 @@ const page = () => {
         </ul>
         <p>*Membre de la FKQ (reçu disponible pour assurance et impôt)</p>
       </div>
-      :
     </div>
   );
 };
