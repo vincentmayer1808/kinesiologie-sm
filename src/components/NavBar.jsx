@@ -8,8 +8,8 @@ export default function NavBar() {
     <>
       <Navbar fluid rounded className='fixed w-full z-30'>
         <Navbar.Brand href="/">
-          <span className="self-center whitespace-nowrap text-2xl text-rose-400 font-semibold">
-            Kinésiologie SM
+          <span className="self-center whitespace-nowrap text-2xl text-red-400">
+            KINÉSIOLOGIE SM
           </span>
         </Navbar.Brand>
         <div className="flex md:order-2 gap-2">

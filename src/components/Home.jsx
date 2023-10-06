@@ -6,16 +6,17 @@ export const HomePage = () => {
   return (
     <>
       <div className="relative flex justify-center items-center w-full p-3 shrink pt-12">
-        <Image
+          <Image
           src="https://res.cloudinary.com/dvowvfxfi/image/upload/v1696431033/KSMlogo_oobig8.webp"
           alt="Logo KSM"
+          // fill
+          // resize="(max-width:768px)100vw, 700px"
           width={2000}
           height={1500}
           className="h-auto max-w-3xl overflow-hidden"
         />
-
         <div className="absolute bottom-0 left-0 z-10 text-left md:w-1/2 pl-5 pb-2">
-          <h1 className="text-xl md:text-4xl font-semibold text-rose-300">
+          <h1 className="text-xl md:text-4xl font-semibold text-red-400">
             Vivez les bienfaits de l&#8217;activité physique au quotidien!
           </h1>
           <p className="text-gray-700 text-lg md:text-2xl">
@@ -23,7 +24,7 @@ export const HomePage = () => {
           </p>
         </div>
       </div>
-      <div className="flex flex-col justify-center items-center gap-3 bg-rose-300 text-gray-700 w-full text-center p-6">
+      <div className="flex flex-col justify-center items-center gap-3 bg-red-300 text-gray-700 w-full text-center p-6">
         <h2 className="text-3xl">La Kinésiologie c&#8217;est quoi?</h2>
         <p>
           La kinésiologie est l&#8217;étude de la dynamique du mouvement humain
@@ -34,7 +35,7 @@ export const HomePage = () => {
         </p>
         <Link
           href="/kinesiologie"
-          className="w-52 bg-neutral-600 px-3 py-2 flex items-center justify-center font-medium text-center text-white rounded-lg hover:bg-teal-700 hover:scale-105 transtion-all duration-200 focus:ring-2 focus:ring-emerald-400"
+          className="w-52 bg-gray-700 px-3 py-2 flex items-center justify-center font-medium text-center text-white rounded-lg hover:bg-teal-700 hover:scale-105 transtion-all duration-200 focus:ring-2 focus:ring-emerald-400"
         >
           EN SAVOIR PLUS!
         </Link>
@@ -82,16 +83,18 @@ export const HomePage = () => {
       </div>
 
       <div className="flex flex-col sm:flex-row">
-        <div className="sm:w-1/2 p-2 max-w-60">
+        <div className="sm:w-1/2 p-2 relative">
           <Image
             src="https://res.cloudinary.com/dvowvfxfi/image/upload/v1696343046/quiSab_thmik5.webp"
             alt="photo de Sabrina"
-            width={1000}
-            height={1000}
+            fill
+            resize="(max-width:768px)100vw, 700px"
+            // width={1000}
+            // height={1000}
             className=""
           />
         </div>
-        <div className="sm:w-1/2 max-w-72 p-2 flex flex-col items-center justify-center gap-4 text-lime-800 p-6">
+        <div className="sm:w-1/2 max-w-72 p-2 flex flex-col items-center justify-center gap-4 p-6">
           <h2 className="text-2xl text-center">Qui Suis-Je?</h2>
           <p className="text-right">
             Depuis toujours j&#8217;adore bouger et aider les gens. Avec les
@@ -102,7 +105,7 @@ export const HomePage = () => {
           </p>
           <Link
             href="/about"
-            className=" w-52 bg-rose-400 px-3 py-2 flex items-center justify-center font-medium text-center text-white rounded-lg hover:bg-teal-700 hover:scale-105 transtion-all duration-200 focus:ring-2 focus:ring-emerald-400"
+            className=" w-52 bg-red-400 px-3 py-2 flex items-center justify-center font-medium text-center text-white rounded-lg hover:bg-teal-700 hover:scale-105 transtion-all duration-200 focus:ring-2 focus:ring-emerald-400"
           >
             EN SAVOIR PLUS!
           </Link>
@@ -120,11 +123,11 @@ export const HomePage = () => {
         </p>
         <p className="text-right">- Anna-Kim</p>
       </div>
-      <div className="p-6 w-full bg-neutral-600 flex flex-col justify-center items-center gap-2 py-4 text-center">
+      <div className="p-6 w-full bg-gray-700 flex flex-col justify-center items-center gap-2 py-4 text-center">
         <p className="text-white text-4xl font-semibold">
           Faites appel à votre Kinésiologue dès aujourd&#8217;hui!
         </p>
-        <Link href="/contact" className=" w-52 bg-rose-400 px-3 py-2 flex items-center justify-center font-medium text-center text-white rounded-lg hover:bg-teal-700 hover:scale-105 transtion-all duration-200 focus:ring-2 focus:ring-emerald-400">
+        <Link href="/contact" className=" w-52 bg-red-400 px-3 py-2 flex items-center justify-center font-medium text-center text-white rounded-lg hover:bg-teal-700 hover:scale-105 transtion-all duration-200 focus:ring-2 focus:ring-emerald-400">
           CONTACTEZ-MOI
         </Link>
       </div>
