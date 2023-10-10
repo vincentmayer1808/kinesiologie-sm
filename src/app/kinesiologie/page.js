@@ -6,7 +6,7 @@ const page = () => {
   return (
     <div className="bg-stone-200 p-5">
       <div className="pt-24 flex flex-col items-center justify-center text-center gap-4 pb-10">
-        <h2 className=" text-5xl text-red-400">
+        <h2 className=" text-5xl text-pilates">
           La Kinésiologie c&#8217;est quoi?
         </h2>
         <p className="italic">
@@ -21,8 +21,8 @@ const page = () => {
         </p>
       </div>
       <div className="flex flex-col items-center justify-center gap-2 pb-6">
-        <h3 className="font-semibold text-cyan-800 text-xl">MATERNITÉ</h3>
-        <p className="text-red-400 text-center">Kinesiologie et maternite</p>
+        <h3 className="font-semibold text-vert text-xl">MATERNITÉ</h3>
+        <p className="text-pilates text-center">Kinesiologie et maternite</p>
         <div className="flex flex-col sm:flex-row items-center justify-center w-full gap-2 py-4">
           <Image
             src=""
@@ -59,10 +59,10 @@ const page = () => {
           </div>
         </div>
         <div className="flex flex-col justify-center gap-2 items-center">
-          <h3 className="font-semibold text-cyan-800 text-xl">
+          <h3 className="font-semibold text-vert text-xl">
             Rééducation périnéale et pelvienne
           </h3>
-          <p className="text-red-400 text-center">
+          <p className="text-pilates text-center">
             Vise à optimiser l&#8217;efficience des muscles du plancher pelvien.{" "}
           </p>
           <p className="w-2/3 pb-4 text-center">
@@ -82,10 +82,10 @@ const page = () => {
         </div>
       </div>
       <div className="flex flex-col items-start justify-center pb-6 w-full gap-2">
-        <h3 className="font-semibold text-cyan-800 text-xl text-center">
+        <h3 className="font-semibold text-vert text-xl text-center">
           50 + en mouvement
         </h3>
-        <p className="text-red-400 text-center">
+        <p className="text-pilates text-center">
           Vise le maintien de son autonomie le plus longtemps possible.
         </p>
         <p className="text-left w-2/3">
@@ -99,7 +99,7 @@ const page = () => {
         </Link>
       </div>
       <div className="flex flex-col items-end justify-center pb-6 gap-2">
-        <h3 className="font-semibold text-cyan-800 text-xl text-center">
+        <h3 className="font-semibold text-vert text-xl text-center">
           S&#8217;entrainer pour soulager la douleur
         </h3>
         <p className="text-right w-2/3">
@@ -112,7 +112,7 @@ const page = () => {
         </p>
       </div>
       <div className="flex flex-col items-center justify-center pb-6 gap-2">
-        <h3 className="font-semibold text-cyan-800 text-xl text-center">
+        <h3 className="font-semibold text-vert text-xl text-center">
           Un kinésiologue{" "}
         </h3>
         <p className="text-center w-2/3">
@@ -120,11 +120,11 @@ const page = () => {
           objectifs précis. Il vous aide à intégrer un style de vie actif afin
           de réduire la sédentarité et favoriser une meilleure santé globale.{" "}
         </p>
-        <Link href="/about" className="hover:text-cyan-800 hover:scale-105">
+        <Link href="/about" className="hover:text-vert hover:scale-105">
           EN SAVOIR PLUS SUR MON APPROCHE
         </Link>
       </div>
-      <p className="font-semibold text-red-400 text-2xl text-center pb-10">
+      <p className="font-semibold text-pilates text-2xl text-center pb-10">
         Osez-vous laissez accompagner !
       </p>
     </div>

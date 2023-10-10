@@ -8,7 +8,7 @@ export default function NavBar() {
     <>
       <Navbar fluid rounded className='fixed w-full z-30'>
         <Navbar.Brand href="/">
-          <span className="self-center whitespace-nowrap text-2xl text-red-400">
+          <span className="font-biome text-pilates self-center whitespace-nowrap text-2xl ">
             KINÉSIOLOGIE SM
           </span>
         </Navbar.Brand>
