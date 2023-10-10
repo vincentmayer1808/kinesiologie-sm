@@ -11,7 +11,7 @@ export default function RV() {
   return (
     <>
       <button
-        className="bg-red-400 px-3 py-2 flex items-center justify-center font-medium text-center text-white rounded-lg hover:bg-teal-700 hover:scale-105 transtion-all duration-200 focus:ring-2 focus:ring-emerald-400"
+        className="bg-pilates px-3 py-2 flex items-center justify-center font-medium text-center text-white rounded-lg hover:bg-teal-700 hover:scale-105 transtion-all duration-200 focus:ring-2 focus:ring-emerald-400"
         onClick={() => props.setOpenModal("form-elements")}
       >
         Prendre Rendez-Vous!

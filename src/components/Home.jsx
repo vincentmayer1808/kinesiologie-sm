@@ -16,15 +16,15 @@ export const HomePage = () => {
           className="h-auto max-w-3xl overflow-hidden"
         />
         <div className="absolute bottom-0 left-0 z-10 text-left md:w-1/2 pl-5 pb-2">
-          <h1 className="text-xl md:text-4xl font-semibold text-red-400">
+          <h1 className="text-xl md:text-4xl font-semibold text-pilates">
             Vivez les bienfaits de l&#8217;activité physique au quotidien!
           </h1>
-          <p className="text-gray-700 text-lg md:text-2xl">
+          <p className="text-gris text-lg md:text-2xl">
             Une approche individualisée et humaine.
           </p>
         </div>
       </div>
-      <div className="flex flex-col justify-center items-center gap-3 bg-red-300 text-gray-700 w-full text-center p-6">
+      <div className="flex flex-col justify-center items-center gap-3 bg-rosebeige text-gris w-full text-center p-6">
         <h2 className="text-3xl">La Kinésiologie c&#8217;est quoi?</h2>
         <p>
           La kinésiologie est l&#8217;étude de la dynamique du mouvement humain
@@ -35,12 +35,12 @@ export const HomePage = () => {
         </p>
         <Link
           href="/kinesiologie"
-          className="w-52 bg-gray-700 px-3 py-2 flex items-center justify-center font-medium text-center text-white rounded-lg hover:bg-teal-700 hover:scale-105 transtion-all duration-200 focus:ring-2 focus:ring-emerald-400"
+          className="w-52 bg-gris px-3 py-2 flex items-center justify-center font-medium text-center text-white rounded-lg hover:bg-teal-700 hover:scale-105 transtion-all duration-200 focus:ring-2 focus:ring-emerald-400"
         >
           EN SAVOIR PLUS!
         </Link>
       </div>
-      <div className="bg-gray-700 text-white w-full text-center p-4">
+      <div className="bg-gris text-white w-full text-center p-4">
         <h2 className="font-bold text-3xl">NOS SERVICES</h2>
         <div className="flex flex-wrap justify-center items-center gap-4">
           <Link
@@ -105,14 +105,14 @@ export const HomePage = () => {
           </p>
           <Link
             href="/about"
-            className=" w-52 bg-red-400 px-3 py-2 flex items-center justify-center font-medium text-center text-white rounded-lg hover:bg-teal-700 hover:scale-105 transtion-all duration-200 focus:ring-2 focus:ring-emerald-400"
+            className=" w-52 bg-rosebeige px-3 py-2 flex items-center justify-center font-medium text-center text-white rounded-lg hover:bg-teal-700 hover:scale-105 transtion-all duration-200 focus:ring-2 focus:ring-emerald-400"
           >
             EN SAVOIR PLUS!
           </Link>
         </div>
       </div>
 
-      <div className="flex flex-col justify-center items-center bg-red-300 w-full text-gray-600 p-6">
+      <div className="flex flex-col justify-center items-center bg-rosebeige w-full text-gris p-6">
         <p className=" text-center text-2xl italic w-2/3">
           ⦁ &#39;&#39; L&#8217;accompagnement que j&#8217;ai reçu était à la
           fois motivant, personnalisé et les exercices recommandés étaient
@@ -123,11 +123,11 @@ export const HomePage = () => {
         </p>
         <p className="text-right">- Anna-Kim</p>
       </div>
-      <div className="p-6 w-full bg-gray-700 flex flex-col justify-center items-center gap-2 py-4 text-center">
+      <div className="p-6 w-full bg-gris flex flex-col justify-center items-center gap-2 py-4 text-center">
         <p className="text-white text-4xl font-semibold">
           Faites appel à votre Kinésiologue dès aujourd&#8217;hui!
         </p>
-        <Link href="/contact" className=" w-52 bg-red-400 px-3 py-2 flex items-center justify-center font-medium text-center text-white rounded-lg hover:bg-teal-700 hover:scale-105 transtion-all duration-200 focus:ring-2 focus:ring-emerald-400">
+        <Link href="/contact" className=" w-52 bg-rosebeige px-3 py-2 flex items-center justify-center font-medium text-center text-white rounded-lg hover:bg-teal-700 hover:scale-105 transtion-all duration-200 focus:ring-2 focus:ring-emerald-400">
           CONTACTEZ-MOI
         </Link>
       </div>

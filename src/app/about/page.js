@@ -7,7 +7,7 @@ const page = () => {
     <div className="pt-12">
       <div className="pt-12 p-6 flex flex-col sm:flex-row justify-center items-center gap-4">
         <div className="sm:w-1/2 flex flex-col justify-center items-center gap-2">
-          <h2 className="text-4xl font-semibold text-center text-cyan-800"> Qui suis-je? </h2>
+          <h2 className="text-4xl font-semibold text-center text-vert"> Qui suis-je? </h2>
           <p className="text-right">
             Depuis toujours j&#8217;adore bouger et aider les gens. Avec les
             études, j&#8217;ai compris davantage les bienfaits d&#8217;intégrer
@@ -28,23 +28,23 @@ const page = () => {
             réussite de celui-ci.
           </p>
         </div>
-        <div className="sm:w-1/2 ">
-          {/* <Image
+        <div className="sm:w-1/2 relative">
+          <Image
             src="https://res.cloudinary.com/dvowvfxfi/image/upload/v1696343046/quiSabLoic_wckyak.webp"
             alt="Sab et Loïc"
             fill={true}
-            // sizes="(max-widht:600px)100vw, 100px"
-            // className="object-contain"
-          /> */}
+            sizes="(max-widht:600px)100vw, 33vw"
+            className="object-contain"
+          />
         </div>
       </div>
-      <div className="flex flex-col sm:flex-row justify-center items-center gap-2 w-ful bg-red-300 bg-red-300 -">
+      <div className="flex flex-col sm:flex-row justify-center items-center gap-2 w-ful bg-rosebeige">
         <div className="sm:w-1/2">
           <Image src="" alt="" width="50vw" />
           {/* (IMAGE; Sab en consultation) -positionnement idéal à côté du texte */}
         </div>
         <div className="sm:w-1/2 flex flex-col items-center justfy-center gap-2 p-6">
-          <h3 className="text-3xl font-semibold text-center text-cyan-800">
+          <h3 className="text-3xl font-semibold text-center text-vert">
             Une approche humaine !
           </h3>
           <p>
@@ -55,12 +55,12 @@ const page = () => {
             bienveillant et motivant tout en utilisant une approche centrée sur
             les besoins de mes clients !
           </p>
-          <Link href="/services" className="hover:text-cyan-800 hover:scale-105">EN SAVOIR PLUS</Link>
+          <Link href="/services" className="hover:text-vert hover:scale-105">EN SAVOIR PLUS</Link>
         </div>
            
       </div>
       <div  className="flex flex-col items-center justfy-center gap-2">
-        <h3 className="text-3xl font-semibold text-center text-cyan-800">Études et formations</h3>
+        <h3 className="text-3xl font-semibold text-center text-vert">Études et formations</h3>
         <ul className=" flex flex-col gap-4 items-center justify-center">
           <li>
             Formation &#8217;Health Behavior Change : From evidence to
