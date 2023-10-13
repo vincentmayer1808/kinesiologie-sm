@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Kinesiologie SM',
-  description: 'Kinesiologie Sabrina Mayer',
+  description: 'Site Internet de Kinesiologie Sabrina Mayer',
 }
 
 export default function RootLayout({ children }) {
