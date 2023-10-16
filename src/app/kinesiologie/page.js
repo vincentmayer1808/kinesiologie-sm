@@ -36,17 +36,12 @@ const page = () => {
             compensations posturales.{" "}
           </p>
           <Link
-            href="/article"
+            href="/services#maternite"
             className="p-2 rounded ring-2 ring-vert hover:text-pilates hover:scale-105 hover:ring-pilates"
           >
             EN SAVOIR PLUS SUR LES BIENFAITS DE L&#8217;AP PRÉ-NATALE
           </Link>
-          <Link
-            href="/article"
-            className="p-2 rounded ring-2 ring-vert hover:text-pilates hover:scale-105 hover:ring-pilates"
-          >
-            EN SAVOIR PLUS SUR LES BIENFAITS DE L&#8217;AP POST-NATALE
-          </Link>
+       
         </div>
       </div>
       <div className="flex flex-col justify-center gap-2 items-center pb-6">
@@ -67,7 +62,7 @@ const page = () => {
           réduire vos symptômes afin d&#8217;améliorer votre qualité de vie.{" "}
         </p>
 
-        <Link href="/article" className="p-2 rounded ring-2 ring-vert hover:text-pilates hover:scale-105 hover:ring-pilates">
+        <Link href="/services#pelvienne" className="p-2 rounded ring-2 ring-vert hover:text-pilates hover:scale-105 hover:ring-pilates">
           EN SAVOIR PLUS SUR LES BIENFAITS DE L&#8217;AP SANTÉE PELVIENNE
         </Link>
       </div>
@@ -85,7 +80,7 @@ const page = () => {
           d&#8217;intégrer l&#8217;activité physique de manière sécuritaire et
           efficace.{" "}
         </p>
-        <Link href="" className="p-2 rounded ring-2 ring-vert hover:text-pilates hover:scale-105 hover:ring-pilates"
+        <Link href="/services#50" className="p-2 rounded ring-2 ring-vert hover:text-pilates hover:scale-105 hover:ring-pilates"
         >
           BIENFAITS ACTIVITÉ PHYSIQUE 50+
         </Link>
