@@ -5,8 +5,8 @@ import React from "react";
 export const HomePage = () => {
   return (
     <>
-      <div className="relative flex justify-center items-center w-full p-3 shrink pt-12">
-          <Image
+      <div className="relative flex justify-center items-center w-full p-3 shrink">
+        <Image
           src="https://res.cloudinary.com/dvowvfxfi/image/upload/v1696431033/KSMlogo_oobig8.webp"
           alt="Logo KSM"
           // fill
@@ -24,7 +24,7 @@ export const HomePage = () => {
           </p>
         </div>
       </div>
-      <div className="flex flex-col justify-center items-center gap-3 bg-rosebeige text-gris w-full text-center p-6">
+      <div className="flex flex-col justify-center items-center gap-3 bg-gradient-to-b from-rosekine to white text-gris w-full text-center p-6">
         <h2 className="text-3xl">La Kinésiologie c&#8217;est quoi?</h2>
         <p>
           La kinésiologie est l&#8217;étude de la dynamique du mouvement humain
@@ -35,68 +35,57 @@ export const HomePage = () => {
         </p>
         <Link
           href="/kinesiologie"
-          className="w-52 bg-gris px-3 py-2 flex items-center justify-center font-medium text-center text-white rounded-lg hover:bg-teal-700 hover:scale-105 transtion-all duration-200 focus:ring-2 focus:ring-emerald-400"
+          className="w-52 bg-pilates px-3 py-2 flex items-center justify-center font-semibold text-center text-white rounded-lg ring-white ring-2 hover:scale-105 transtion-all duration-200 hover:ring-vert hover:shadow-vert hover:shadow-lg hover:ring-vert"
         >
           EN SAVOIR PLUS!
         </Link>
       </div>
-      <div className="bg-gris text-white w-full text-center p-4">
+      <div className="bg-white text-pilates w-full text-center p-4">
         <h2 className="font-bold text-3xl">NOS SERVICES</h2>
         <div className="flex flex-wrap justify-center items-center gap-4">
           <Link
-            href="/services"
-            className="p-3 m-2 w-64 rounded-lg hover:ring-2 ring-white hover:shadow-lg hover:shadow-white focus:scale-105"
+            href="/services#carte"
+            className="flex flex-col gap-2 items-center justify-center p-3 m-2 w-64 h-72 rounded-lg ring-2 ring-rosekine hover:shadow-lg hover:shadow-vert hover:ring-vert focus:scale-105"
           >
-            <div>
-              <Image src="" alt="" width={200} height={200} />
-              <h3>SÉANCES A LA CARTE</h3>
-            </div>
+            <Image className="rounded-lg" src="https://res.cloudinary.com/dvowvfxfi/image/upload/v1696963374/serviceALC_yvdlx5.webp" alt="Coeur en Santé" width={200} height={200} />
+            <h3>SÉANCES A LA CARTE</h3>
           </Link>
           <Link
-            href="/services"
-            className="p-3 m-2 w-64 rounded-lg hover:ring-2 ring-white hover:shadow-lg hover:shadow-white focus:scale-105"
+            href="/services#maternite"
+            className="flex flex-col gap-2 items-center justify-center p-3 m-2 w-64 h-72  rounded-lg ring-2 ring-rosekine hover:shadow-lg hover:shadow-vert hover:ring-vert focus:scale-105"
           >
-            <div>
-              <Image src="" alt="" width={200} height={200} />
-              <h3>MATERNITÉ</h3>
-            </div>
+            <Image className="rounded-lg" src="https://res.cloudinary.com/dvowvfxfi/image/upload/v1696963375/serviceMaternite_mmg6qp.webp" alt="Maternit" width={200} height={200} />
+            <h3>MATERNITÉ</h3>
           </Link>
           <Link
-            href="/services"
-            className="p-3 m-2 w-64 rounded-lg hover:ring-2 ring-white hover:shadow-lg hover:shadow-white focus:scale-105"
+            href="/services#50"
+            className="flex flex-col gap-2 items-center justify-center p-3 m-2 w-64 h-72  rounded-lg ring-2 ring-rosekine hover:shadow-lg hover:shadow-vert hover:ring-vert focus:scale-105"
           >
-            <div>
-              <Image src="" alt="" width={200} height={200} />
-              <h3>50+ EN MOUVEMENT</h3>
-            </div>
+            <Image className="rounded-lg" src="https://res.cloudinary.com/dvowvfxfi/image/upload/v1696963375/service50_sis4xg.webp" alt="50 ans en mouvement" width={200} height={200} />
+            <h3>50+ EN MOUVEMENT</h3>
           </Link>
           <Link
-            href="/services"
-            className="p-3 m-2 w-64 rounded-lg hover:ring-2 ring-white hover:shadow-lg hover:shadow-white focus:scale-105"
+            href="/services#pelvienne"
+            className="flex flex-col gap-2 items-center justify-center p-3 m-2 w-64 h-72  rounded-lg ring-2 ring-rosekine hover:shadow-lg hover:shadow-vert hover:ring-vert focus:scale-105"
           >
-            <div>
-              <Image src="" alt="" width={200} height={200} />
-              <h3>SANTÉ ABDOMINALE & PELVIENNE</h3>
-            </div>
+            <Image className="rounded-lg" src="https://res.cloudinary.com/dvowvfxfi/image/upload/v1696963375/serviceSantePelv_lq5wdb.webp" alt="Santé pelvienne" width={200} height={200} />
+            <h3>SANTÉ ABDOMINALE & PELVIENNE</h3>
           </Link>
         </div>
       </div>
 
-      <div className="flex flex-col sm:flex-row">
-        <div className="sm:w-1/2 p-2 relative">
+      <div className="flex flex-col sm:flex-row items-center justify-center">
+        <div className="sm:w-1/2 p-5 relative max-w-sm">
           <Image
             src="https://res.cloudinary.com/dvowvfxfi/image/upload/v1696343046/quiSab_thmik5.webp"
             alt="photo de Sabrina"
-            fill
-            resize="(max-width:768px)100vw, 700px"
-            // width={1000}
-            // height={1000}
-            className=""
+            width={1000}
+            height={1000}
           />
         </div>
         <div className="sm:w-1/2 max-w-72 p-2 flex flex-col items-center justify-center gap-4 p-6">
           <h2 className="text-2xl text-center">Qui Suis-Je?</h2>
-          <p className="text-right">
+          <p className="text-center">
             Depuis toujours j&#8217;adore bouger et aider les gens. Avec les
             études, j&#8217;ai compris davantage les bienfaits d&#8217;intégrer
             un style de vie actif et maintenant je souhaite vous aider à y
@@ -105,14 +94,14 @@ export const HomePage = () => {
           </p>
           <Link
             href="/about"
-            className=" w-52 bg-rosebeige px-3 py-2 flex items-center justify-center font-medium text-center text-white rounded-lg hover:bg-teal-700 hover:scale-105 transtion-all duration-200 focus:ring-2 focus:ring-emerald-400"
+            className="w-52 bg-pilates px-3 py-2 flex items-center justify-center font-semibold text-center text-white rounded-lg ring-white ring-2 hover:shadow-lg hover:shadow-vert hover:scale-105 transtion-all duration-200 hover:ring-vert"
           >
             EN SAVOIR PLUS!
           </Link>
         </div>
       </div>
 
-      <div className="flex flex-col justify-center items-center bg-rosebeige w-full text-gris p-6">
+      <div className="flex flex-col justify-center items-center bg-stone-200 w-full text-gris p-6">
         <p className=" text-center text-2xl italic w-2/3">
           ⦁ &#39;&#39; L&#8217;accompagnement que j&#8217;ai reçu était à la
           fois motivant, personnalisé et les exercices recommandés étaient
@@ -127,7 +116,10 @@ export const HomePage = () => {
         <p className="text-white text-4xl font-semibold">
           Faites appel à votre Kinésiologue dès aujourd&#8217;hui!
         </p>
-        <Link href="/contact" className=" w-52 bg-rosebeige px-3 py-2 flex items-center justify-center font-medium text-center text-white rounded-lg hover:bg-teal-700 hover:scale-105 transtion-all duration-200 focus:ring-2 focus:ring-emerald-400">
+        <Link
+          href="/contact"
+          className="w-52 bg-pilates px-3 py-2 flex items-center justify-center font-semibold text-center text-white rounded-lg ring-white ring-2 hover:shadow-lg hover:shadow-vert hover:scale-105 transtion-all duration-200 hover:ring-vert"
+        >
           CONTACTEZ-MOI
         </Link>
       </div>
