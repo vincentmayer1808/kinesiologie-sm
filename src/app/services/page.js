@@ -1,37 +1,49 @@
 import RV from "@/components/RV";
+import { Services } from "@/components/Services";
 import Image from "next/image";
 import React from "react";
 
 const page = () => {
   return (
     <div className="text-center">
-      <div className="w-screen">
+      <div className=" relative w-screen">
         <Image
           src="https://res.cloudinary.com/dvowvfxfi/image/upload/v1696963946/openheart_cburqw.webp"
           alt="openheart"
           width={2500}
           height={1500}
         />
-      </div>
-      <h2 className="text-4xl text-vert">Mes Services</h2>
-      <div className="flex flex-col justify-center items-center gap-4 p-6">
-        <div id="carte" className="w-80 bg-rosebeige p-6 flex flex-col items-center gap-2 rounded-lg shadow shadow-black hover:shadow-lg hover:shadow-black hover:scale-105">
-          <h3  className="text-2xl text-vert">Les séances à la carte</h3>
-          <p>
-            Ce forfait demande une rencontre initiale au préalable afin
-            d&#8217;évaluer vos besoins et créer un programme adapté.{" "}
-          </p>
-          <p>Rencontre initiale + création du programme : 90$ </p>
-          <p>Séance Individuelle :70 $</p>
-          <p> Séance Semi-Privée (2à3) : 95 $</p>
-          <p>
-          
-            *Un rabais peut s&#8217;appliquer pour laprise de plusieurs séances.
-          </p>
-          <RV />
+        <div className="text-left text-white z-10 absolute top-20 left-0 z-10 md:w-1/2 pl-5 pb-2">
+          <h2 className="text-2xl sm:text-4xl text-gris font-bold">RETROUVE-TOI</h2>
         </div>
       </div>
-      <h3 id="maternite" className="text-2xl text-rosebeige">
+      <Services />
+      <div id="carte" className="flex flex-col justify-center items-center gap-4 p-6 pt-12">
+        <h3 className="text-2xl font-semibold text-vert">Les séances à la carte</h3>
+        <p>
+          Ce forfait demande une rencontre initiale au préalable afin
+          d&#8217;évaluer vos besoins et créer un programme adapté.{" "}
+        </p>
+        <div className="flex flex-col sm:flex-row items-center justify-evenly gap-4">
+          <div className="w-52 h-36 bg-vert p-6 flex flex-col items-center justify-center gap-2 rounded-lg shadow shadow-black hover:shadow-lg hover:shadow-black hover:scale-105">
+            <h4 className="text-lg">Rencontre initiale + création du programme : </h4>
+            <p>90 $ </p>
+          </div>
+          <div className="w-52 h-36 bg-vert p-6 flex flex-col items-center justify-center gap-2 rounded-lg shadow shadow-black hover:shadow-lg hover:shadow-black hover:scale-105">
+            <h4 className="text-lg">Séance Individuelle :</h4>
+            <p>1H | 70 $</p>
+          </div>
+          <div className="w-52 h-36 bg-vert p-6 flex flex-col items-center justify-center gap-2 rounded-lg shadow shadow-black hover:shadow-lg hover:shadow-black hover:scale-105">
+            <h4 className="text-lg"> Séance Semi-Privée (2à3) : </h4>
+            <p>1H | 95 $</p>
+          </div>
+        </div>
+        <RV />
+        <p>
+          *Un rabais peut s&#8217;appliquer pour la prise de plusieurs séances.
+        </p>
+      </div>
+      <h3 id="maternite" className="text-2xl font-semibold text-vert">
         Les forfaits autour de la maternité
       </h3>
       <div className="w-screen flex flex-wrap justify-evenly items-center gap-4 p-6">
@@ -72,12 +84,12 @@ const page = () => {
           <RV />
         </div>
       </div>
-      <h3 id="pelvienne" className="text-2xl text-vert">
+      <h3 id="pelvienne" className="text-2xl font-semibold text-vert">
         Les forfaits autour de la santé abdominale & pelvienne
       </h3>
       <div className="flex flex-wrap justify-evenly gap-4 p-6">
-        <div className="w-80 bg-rosebeige p-6 flex flex-col items-center gap-2 rounded-lg shadow shadow-black hover:shadow-lg hover:shadow-black hover:scale-105">
-          <h4 className="text-2xl text-vert">Premier pas</h4>
+        <div className="w-80 bg-vert p-6 flex flex-col items-center gap-2 rounded-lg shadow shadow-black hover:shadow-lg hover:shadow-black hover:scale-105">
+          <h4 className="text-2xl text-rosekine">Premier pas</h4>
           <p>
             Ce forfait comprend une rencontre initiale (1h) où l&#8217;on
             évaluera tes besoins et déterminera tes objectifs, un vidéo
@@ -95,8 +107,8 @@ const page = () => {
           </p>
           <RV />
         </div>
-        <div className="w-80 bg-rosebeige p-6 flex flex-col items-center gap-2 rounded-lg shadow shadow-black hover:shadow-lg hover:shadow-black hover:scale-105">
-          <h4 className="text-2xl text-vert">L&#8217;intégration </h4>
+        <div className="w-80 bg-vert p-6 flex flex-col items-center gap-2 rounded-lg shadow shadow-black hover:shadow-lg hover:shadow-black hover:scale-105">
+          <h4 className="text-2xl text-rosekine">L&#8217;intégration </h4>
           <p>
             Ce forfait s&#8217;échelonne sur une période de 12 semaines. Il
             comprend une rencontre mensuelle (30min) où l&#8217;on évaluera tes
@@ -115,7 +127,7 @@ const page = () => {
           <RV />
         </div>
       </div>
-      <h3 id="50" className="text-2xl text-rosebeige">
+      <h3 id="50" className="text-2xl font-semibold text-vert">
         Les forfaits 50+ en mouvement{" "}
       </h3>
       <div className=" flex flex-wrap justify-evenly gap-4 p-6">
