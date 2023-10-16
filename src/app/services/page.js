@@ -4,7 +4,7 @@ import React from "react";
 
 const page = () => {
   return (
-    <div className="pt-12 text-center">
+    <div className="text-center">
       <div className="w-screen">
         <Image
           src="https://res.cloudinary.com/dvowvfxfi/image/upload/v1696963946/openheart_cburqw.webp"
@@ -15,8 +15,8 @@ const page = () => {
       </div>
       <h2 className="text-4xl text-vert">Mes Services</h2>
       <div className="flex flex-col justify-center items-center gap-4 p-6">
-        <div className="w-80 bg-rosebeige p-6 flex flex-col items-center gap-2 rounded-lg shadow shadow-black hover:shadow-lg hover:shadow-black hover:scale-105">
-          <h3 className="text-2xl text-vert">Les séances à la carte</h3>
+        <div id="carte" className="w-80 bg-rosebeige p-6 flex flex-col items-center gap-2 rounded-lg shadow shadow-black hover:shadow-lg hover:shadow-black hover:scale-105">
+          <h3  className="text-2xl text-vert">Les séances à la carte</h3>
           <p>
             Ce forfait demande une rencontre initiale au préalable afin
             d&#8217;évaluer vos besoins et créer un programme adapté.{" "}
@@ -31,7 +31,7 @@ const page = () => {
           <RV />
         </div>
       </div>
-      <h3 className="text-2xl text-rosebeige">
+      <h3 id="maternite" className="text-2xl text-rosebeige">
         Les forfaits autour de la maternité
       </h3>
       <div className="w-screen flex flex-wrap justify-evenly items-center gap-4 p-6">
@@ -72,7 +72,7 @@ const page = () => {
           <RV />
         </div>
       </div>
-      <h3 className="text-2xl text-vert">
+      <h3 id="pelvienne" className="text-2xl text-vert">
         Les forfaits autour de la santé abdominale & pelvienne
       </h3>
       <div className="flex flex-wrap justify-evenly gap-4 p-6">
@@ -115,7 +115,7 @@ const page = () => {
           <RV />
         </div>
       </div>
-      <h3 className="text-2xl text-rosebeige">
+      <h3 id="50" className="text-2xl text-rosebeige">
         Les forfaits 50+ en mouvement{" "}
       </h3>
       <div className=" flex flex-wrap justify-evenly gap-4 p-6">

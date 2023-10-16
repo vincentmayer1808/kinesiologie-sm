@@ -11,7 +11,7 @@ export default function RV() {
   return (
     <>
       <button
-        className="bg-pilates px-3 py-2 flex items-center justify-center font-medium text-center text-white rounded-lg hover:bg-teal-700 hover:scale-105 transtion-all duration-200 focus:ring-2 focus:ring-emerald-400"
+        className="w-52 bg-pilates px-3 py-2 flex items-center justify-center font-semibold text-center text-white rounded-lg ring-white ring-2 hover:shadow-lg hover:shadow-vert hover:scale-105 transtion-all duration-200 hover:ring-vert"
         onClick={() => props.setOpenModal("form-elements")}
       >
         Prendre Rendez-Vous!
@@ -21,11 +21,12 @@ export default function RV() {
         size="md"
         popup
         onClose={() => props.setOpenModal(undefined)}
+
       >
-        <Modal.Header />
-        <Modal.Body>
-          <div className="space-y-6">
-            <h3 className="text-xl font-medium text-gray-900 dark:text-white">
+        <Modal.Header className="bg-vert" />
+        <Modal.Body className="bg-vert">
+          <div className="space-y-6 text-center">
+            <h3 className="text-xl font-medium text-gris dark:text-white">
               Contactez-moi
             </h3>
             <p>
@@ -58,8 +59,9 @@ export default function RV() {
                 rows={4}
               />
             </div>
-            <div className="w-full">
-              <Button className="bg-rose-400">Envoyer</Button>
+            <div className="w-full flex justify-center">
+              <button className="w-52 bg-pilates px-3 py-2 flex items-center justify-center font-semibold text-center text-white rounded-lg ring-white ring-2 hover:shadow-lg hover:shadow-vert hover:scale-105 transtion-all duration-200 hover:ring-vert"
+              >Envoyer</button>
             </div>
           </div>
         </Modal.Body>
