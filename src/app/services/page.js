@@ -2,7 +2,8 @@ import RV from "@/components/RV";
 import { Services } from "@/components/Services";
 import Image from "next/image";
 import React from "react";
-
+import { dancingScript } from "../fonts";
+// className="text-2xl sm:text-4xl text-gris font-bold" 
 const page = () => {
   return (
     <div className="text-center">
@@ -13,8 +14,8 @@ const page = () => {
           width={2500}
           height={1500}
         />
-        <div className="text-left text-white z-10 absolute top-20 left-0 z-10 md:w-1/2 pl-5 pb-2">
-          <h2 className="text-2xl sm:text-4xl text-gris font-bold">RETROUVE-TOI</h2>
+        <div className="text-2xl sm:text-6xl text-white font-bold text-left z-10 absolute top-20 left-0 z-10 md:w-1/2 pl-5 pb-2">
+          <h2 className={dancingScript.className}>RETROUVES-TOI</h2>
         </div>
       </div>
       <Services />

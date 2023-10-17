@@ -1,8 +1,11 @@
 import NavBar from '@/components/NavBar'
 import './globals.css'
-import { Montserrat} from 'next/font/google'
+import { Footer } from '@/components/Footer'
+import { montserrat } from './fonts'
 
-const montserrat = Montserrat({ subsets: ['latin'] })
+// import { Montserrat, Dancing_Script } from 'next/font/google'
+// const montserrat = Montserrat({ subsets: ['latin'] })
+// const dancingScript = Dancing_Script({subsets: ['latin']})
 
 export const metadata = {
   title: 'Kinesiologie SM',
@@ -13,17 +16,18 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-      <link href="https://db.onlinewebfonts.com/c/1d4d7dd348a7632d33c193edf4827f87?family=Biome+W04+Light" rel="stylesheet"/>
+        <link href="https://db.onlinewebfonts.com/c/1d4d7dd348a7632d33c193edf4827f87?family=Biome+W04+Light" rel="stylesheet" />
       </head>
       <body className={montserrat.className}>
 
-        <NavBar/>
-        
-      <div className='pt-24 sm:pt-12'>
+        <NavBar />
 
-        {children}
-      </div>
-        </body>
+        <div className='pt-28 sm:pt-14'>
+
+          {children}
+        </div>
+        <Footer/>
+      </body>
     </html>
   )
 }
