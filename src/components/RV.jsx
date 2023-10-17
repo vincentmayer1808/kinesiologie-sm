@@ -1,14 +1,55 @@
 "use client";
 
-import { Button, Textarea, Label, Modal, TextInput } from "flowbite-react";
+import { Modal } from "flowbite-react";
 import { useState } from "react";
 
 export default function RV() {
   const [openModal, setOpenModal] = useState("");
   const [email, setEmail] = useState("");
   const props = { openModal, setOpenModal, email, setEmail };
+ 
+  const initForm = {
+    username: "",
+    email: "",
+    consult: "",
+  };
 
+  const [formState, setFormState] = useState(initForm);
+  const [isLoading, setIsLoading] = useState(false);
+  const onChangeForm = ({ target }) => {
+    setFormState({
+      ...formState,
+      [target.name]: target.value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsLoading(true);
+    const { username, consult, email } = formState;
+    if (username === "" || email === "" || consult === "") {
+      window.alert("Please, fill all fields!");
+    } else {
+      await addToDB(formState);
+    }
+    setIsLoading(false);
+  };
+  const addToDB = async (info) => {
+    try {
+    //   await db.collection("contact").add(info);
+      console.log(info);
+      setFormState(initForm);
+ 
+    //   window.alert("I will respond as soon as posible, thanks for contacting me!");
+    } catch (err) {
+      console.log(err);
+    //   window.alert(
+    //     "An error ocurred and I couldn,t receive your message, please try again!"
+    //   );
+    }
+  };
   return (
+    
     <>
       <button
         className="w-52 bg-pilates px-3 py-2 flex items-center justify-center font-semibold text-center text-white rounded-lg ring-white ring-2 hover:shadow-lg hover:shadow-vert hover:scale-105 transtion-all duration-200 hover:ring-vert"
@@ -23,47 +64,53 @@ export default function RV() {
         onClose={() => props.setOpenModal(undefined)}
 
       >
-        <Modal.Header className="bg-vert" />
-        <Modal.Body className="bg-vert">
-          <div className="space-y-6 text-center">
-            <h3 className="text-xl font-medium text-gris dark:text-white">
-              Contactez-moi
-            </h3>
-            <p>
-              Pour prendre rendez-vous, écrivez-moi a l&#8217;aide de ce
-              formulaire!
-            </p>
-            <div>
-              <div className="mb-2 block">
-                <Label htmlFor="email" value="Votre courriel" />
-              </div>
-              <TextInput id="email" placeholder="name@company.com" required />
-            </div>
-            <div>
-              <div className="mb-2 block">
-                <Label htmlFor="userName" value="Votre nom" />
-              </div>
-              <TextInput id="userName" type="text" required />
-            </div>
-            <div className="max-w-md" id="textarea">
-              <div className="mb-2 block">
-                <Label
-                  htmlFor="comment"
-                  value="Contez-moi ce que vous désirez et votre disponibilité"
-                />
-              </div>
-              <Textarea
-                id="comment"
-                placeholder="Laissez moi votre message"
-                required
-                rows={4}
-              />
-            </div>
-            <div className="w-full flex justify-center">
-              <button className="w-52 bg-pilates px-3 py-2 flex items-center justify-center font-semibold text-center text-white rounded-lg ring-white ring-2 hover:shadow-lg hover:shadow-vert hover:scale-105 transtion-all duration-200 hover:ring-vert"
-              >Envoyer</button>
-            </div>
-          </div>
+        <Modal.Header className="bg-vert rounded-t-lg" />
+        <Modal.Body className="bg-vert rounded-b-lg shadow-xl " >
+        <form className="bg-vert flex-col flex items-center justify-center gap-2 m-2 p-2 ">
+                <p className="text-center text-xl text-white">Remplissez ce formulaire pour réserver</p>
+                <div className="mb-2">
+                  <input
+                    className="placeholder-white bg-vert text-white rounded border-white p-2 hover:ring-2 hover:ring-white hover:shadow-lg hover:shadow-white focus:border-none"
+                    name="username"
+                    type="text"
+                    placeholder='Votre Nom'
+                    value={formState.username}
+                    onChange={onChangeForm}
+                  />
+                </div>
+                <div className="mb-2">
+                 
+                  <input
+                    className="placeholder-white bg-vert text-white rounded border-white p-2 hover:ring-2 hover:ring-white hover:shadow-lg hover:shadow-white focus:border-none"
+                    name="email"
+                    type="email"
+                    placeholder='Votre Courriel'
+                    value={formState.email}
+                    onChange={onChangeForm}
+                  />
+                </div>
+                <div className="mb-2">
+                 
+                  <textarea
+                    name="consult"
+                    className="placeholder-white bg-vert text-white rounded border-white p-2 hover:ring-2 hover:ring-white hover:shadow-lg hover:shadow-white focus:border-none"
+                    rows="4"
+                    cols="40"
+                    placeholder='Indiquer moi le service désiré ainsi que votre disponibilité'
+                    value={formState.consult}
+                    onChange={onChangeForm}
+                  />
+                </div>
+                <button
+                  className="flex items-center px-3 py-2 font-medium text-center text-white bg-pilates rounded-lg ring-2 ring-white hover:shadow-lg hover:shadow-white hover:scale-105"
+                  id="resButton"
+                  type="submit"
+                  onClick={handleSubmit}
+                  disabled={isLoading}
+                >
+                  Envoyer
+                </button>
+              </form>
         </Modal.Body>
       </Modal>
     </>

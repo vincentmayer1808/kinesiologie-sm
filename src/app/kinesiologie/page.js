@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { dancingScript } from "../fonts";
 
 const page = () => {
   return (
@@ -112,8 +113,8 @@ const page = () => {
           EN SAVOIR PLUS SUR MON APPROCHE
         </Link>
       </div>
-      <p className="font-semibold text-pilates text-2xl text-center pb-10">
-        Osez-vous laissez accompagner !
+      <p className="font-semibold text-pilates text-5xl text-center pb-10">
+        <span className={dancingScript.className}> Osez-vous laissez accompagner !</span>
       </p>
     </div>
   );
