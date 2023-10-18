@@ -49,7 +49,7 @@ const page = () => {
       </h3>
       <div className="w-screen flex flex-wrap justify-evenly items-center gap-4 p-6">
         <div className="w-80 bg-vert p-6 flex flex-col items-center gap-2 rounded-lg shadow shadow-black hover:shadow-lg hover:shadow-black hover:scale-105">
-          <h4 className="text-2xl text-rosebeige">L&#8217;essentiel </h4>
+          <h4 className="text-2xl text-rosekine">L&#8217;essentiel </h4>
           <p>
             Ce forfait comprend une rencontre initiale (1h) où l&#8217;on
             évaluera tes besoins et déterminera tes objectifs, un vidéo
@@ -66,7 +66,7 @@ const page = () => {
           <RV />
         </div>
         <div className="w-80 bg-vert p-6 flex flex-col items-center gap-2 rounded-lg shadow shadow-black hover:shadow-lg hover:shadow-black hover:scale-105">
-          <h4 className="text-2xl text-rosebeige">La progression</h4>
+          <h4 className="text-2xl text-rosekine">La progression</h4>
           <p>
             Ce forfait comprend une rencontre initiale (1h) où l&#8217;on
             évaluera tes besoins et déterminera tes objectifs, un vidéo
@@ -133,7 +133,7 @@ const page = () => {
       </h3>
       <div className=" flex flex-wrap justify-evenly gap-4 p-6">
         <div className="w-80 bg-vert p-6 flex flex-col items-center gap-2 rounded-lg shadow shadow-black hover:shadow-lg hover:shadow-black hover:scale-105">
-          <h4 className="text-2xl text-rosebeige">En action</h4>
+          <h4 className="text-2xl text-rosekine">En action</h4>
           <p>
             Ce forfait comprend une rencontre initiale (1h) où l&#8217;on
             évaluera tes besoins et déterminera tes objectifs, un vidéo
@@ -148,7 +148,7 @@ const page = () => {
           <RV />
         </div>
         <div className="w-80 bg-vert p-6 flex flex-col items-center gap-2 rounded-lg shadow shadow-black hover:shadow-lg hover:shadow-black hover:scale-105">
-          <h4 className="text-2xl text-rosebeige">
+          <h4 className="text-2xl text-rosekine">
             La prise en charge complète
           </h4>
           <p>

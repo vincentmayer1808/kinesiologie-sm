@@ -73,7 +73,7 @@ export default function RV() {
                     className="placeholder-white bg-vert text-white rounded border-white p-2 hover:ring-2 hover:ring-white hover:shadow-lg hover:shadow-white focus:border-none"
                     name="username"
                     type="text"
-                    placeholder='Votre Nom'
+                    placeholder='Ton Nom'
                     value={formState.username}
                     onChange={onChangeForm}
                   />
@@ -84,7 +84,7 @@ export default function RV() {
                     className="placeholder-white bg-vert text-white rounded border-white p-2 hover:ring-2 hover:ring-white hover:shadow-lg hover:shadow-white focus:border-none"
                     name="email"
                     type="email"
-                    placeholder='Votre Courriel'
+                    placeholder='Ton Courriel'
                     value={formState.email}
                     onChange={onChangeForm}
                   />
@@ -95,8 +95,8 @@ export default function RV() {
                     name="consult"
                     className="placeholder-white bg-vert text-white rounded border-white p-2 hover:ring-2 hover:ring-white hover:shadow-lg hover:shadow-white focus:border-none"
                     rows="4"
-                    cols="40"
-                    placeholder='Indiquer moi le service désiré ainsi que votre disponibilité'
+                    cols="30"
+                    placeholder='Indique-moi le service qui t&#8217;intéresse ainsi que tes prochaines disponibilités'
                     value={formState.consult}
                     onChange={onChangeForm}
                   />
