@@ -31,7 +31,7 @@ const page = () => {
             alt="Sab et Loïc"
             width={600}
             height={1000}
-            className="max-w-sm"
+            className="max-w-sm shadow-md shadow-gray-500 rounded"
           />
         </div>
       </div>
@@ -42,7 +42,6 @@ const page = () => {
             width={500}
             height={500}
             className="max-w-xs" />
-          {/* (IMAGE; Sab en consultation) -positionnement idéal à côté du texte */}
         </div>
         <div className="sm:w-1/2 flex flex-col items-center justfy-center text-center gap-2 p-6">
           <h3 className="text-2xl sm:text-4xl font-semibold text-vert">

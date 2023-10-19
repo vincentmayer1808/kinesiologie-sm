@@ -14,7 +14,7 @@ export const HomePage = () => {
           // resize="(max-width:768px)100vw, 700px"
           width={2000}
           height={1500}
-          className="h-auto max-w-3xl overflow-hidden"
+          className="h-auto max-w-3xl overflow-hidden "
         />
         <div className="absolute bottom-0 left-0 z-10 text-left md:w-1/2 pl-5 pb-2">
           <h1 className="text-xl md:text-4xl font-semibold text-pilates">
@@ -47,6 +47,7 @@ export const HomePage = () => {
             alt="photo de Sabrina"
             width={1000}
             height={1000}
+            className="shadow-md shadow-gray-500 rounded"
           />
         </div>
         <div className="sm:w-1/2 max-w-72 p-2 flex flex-col items-center justify-center gap-4 p-6">
