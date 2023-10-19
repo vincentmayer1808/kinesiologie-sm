@@ -26,7 +26,6 @@ const page = () => {
         <div className="flex flex-col justify-center gap-4 items-center text-center pb-6">
           <p className=" w-2/3">
           Dans cette étape cruciale de la vie, il est encore plus important de prendre soin de soi et de bouger de manière sécuritaire et adaptée. Adopter un style de vie actif va avoir des bénéfices pour la maman et le bébé. Un programme adapté permet, entre autres, d&#8217;éviter les blessures, de facilité la grossesse, l&#8217;accouchement, la récupération post-accouchement ainsi que de prévenir ou d&#8217;améliorer les douleurs causées par les compensations posturales liées à la maternité.
-          
           </p>
           <Link
             href="/services#maternite"

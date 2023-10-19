@@ -66,7 +66,7 @@ export const HomePage = () => {
 
       <div className="flex flex-col justify-center items-center bg-stone-200 w-full text-gris p-6">
         <p className=" text-center text-2xl italic w-2/3">
-          &#39;&#39; L&#8217;accompagnement que j&#8217;ai reçu était à la fois motivant et personnalisé. Les exercices recommandés étaient clairs et agréables à réaliser. Sabrina fait preuve d&#8217;une grande écoute envers les besoins de la personne qu&#8217;elle accompagne, sans mettre de jugement, ce que crée un environnement propice à l&#8217;échange. &#39;&#39;
+          &#39;&#39;L&#8217;accompagnement que j&#8217;ai reçu était à la fois motivant et personnalisé. Les exercices recommandés étaient clairs et agréables à réaliser. Sabrina fait preuve d&#8217;une grande écoute envers les besoins de la personne qu&#8217;elle accompagne, sans mettre de jugement, ce que crée un environnement propice à l&#8217;échange.&#39;&#39;
         </p>
         <p className="text-right">- Anna-Kim</p>
       </div>

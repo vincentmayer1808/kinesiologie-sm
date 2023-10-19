@@ -1,5 +1,6 @@
 "use client"
 
+import { db } from '@/firebase/firebase';
 import React, { useState } from 'react'
 
 export const Contact = () => {
@@ -32,27 +33,27 @@ export const Contact = () => {
   };
   const addToDB = async (info) => {
     try {
-      //   await db.collection("contact").add(info);
+        await db.collection("contact").add(info);
       console.log(info);
       setFormState(initForm);
 
-      //   window.alert("I will respond as soon as posible, thanks for contacting me!");
+        window.alert("Message sent correctly");
     } catch (err) {
       console.log(err);
-      //   window.alert(
-      //     "An error ocurred and I couldn,t receive your message, please try again!"
-      //   );
+        window.alert(
+          "The message could not be send"
+        );
     }
   };
   return (
     <>
-      <form className="bg-pilates flex-col flex items-center justify-center gap-2 m-2 p-2 rounded ring-2 ring-vert shadow-lg shadow-vert">
+      <form className="bg-pilates flex-col flex items-center justify-center gap-2 m-2 p-4 rounded shadow-lg shadow-black ">
         <div className="mb-2">
           <input
             className="placeholder-white bg-pilates text-white rounded border-white p-2 hover:ring-2 hover:ring-white hover:shadow-xl hover:shadow-white focus:border-none"
             name="username"
             type="text"
-            placeholder='Ton Nom'
+            placeholder='Nom'
             value={formState.username}
             onChange={onChangeForm}
           />
@@ -63,7 +64,7 @@ export const Contact = () => {
             className="placeholder-white bg-pilates text-white rounded border-white p-2 hover:ring-2 hover:ring-white hover:shadow-xl hover:shadow-white focus:border-none"
             name="email"
             type="email"
-            placeholder='Ton Courriel'
+            placeholder='Courriel'
             value={formState.email}
             onChange={onChangeForm}
           />
@@ -75,7 +76,7 @@ export const Contact = () => {
             className="placeholder-white bg-pilates text-white rounded border-white p-2 hover:ring-2 hover:ring-white hover:shadow-xl hover:shadow-white focus:border-none"
             rows="4"
             cols="30"
-            placeholder='Écris-moi ton message'
+            placeholder='Écris-moi ton message ici...'
             value={formState.consult}
             onChange={onChangeForm}
           />

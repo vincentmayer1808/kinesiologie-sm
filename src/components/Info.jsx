@@ -10,10 +10,10 @@ export const Info = () => {
             <h3 className='text-xl'>SABRINA MAYER</h3>
             <p>819 217 7800</p>
             <p>sabrinamayer.kinesiologue@gmail.com </p>
-        
-            <div className='flex justify-evenly items-center'>
+
+            <div className='flex justify-evenly items-center text-vert'>
                 <Link href="https://www.facebook.com/profile.php?id=61551595513543" target='_blank' className='hover:scale-110'>
-                    <BiLogoFacebookCircle/>
+                    <BiLogoFacebookCircle />
                 </Link>
                 <Link href="https://instagram.com/kinesiologie_sm?igshid=NGVhN2U2NjQ0Yg%3D%3D&utm_source=qr" target='_blank' className='hover:scale-110'>
                     <BiLogoInstagramAlt />

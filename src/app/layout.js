@@ -20,13 +20,13 @@ export default function RootLayout({ children }) {
       </head>
       <body className={montserrat.className}>
 
-        <NavBar />
+        <NavBar className="text-gris"/>
 
-        <div className='pt-28 sm:pt-14'>
+        <div className='pt-28 sm:pt-14 text-gris'>
 
           {children}
         </div>
-        <Footer/>
+        <Footer className="text-gris"/>
       </body>
     </html>
   )
