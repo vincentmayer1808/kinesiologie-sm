@@ -7,7 +7,7 @@ export const Footer = () => {
     return (
         <div>
 
-            <div className='flex flex-col sm:flex-row justify-evenly items-center gap-2 bg-gradient-to-b from-white to-rosekine'>
+            <div className='flex flex-col sm:flex-row justify-evenly items-center gap-2 bg-gradient-to-b from-white to-rosekine pb-4'>
                 <div className='flex  items-center justify-center sm:w-1/3'>
                     <Image src="https://res.cloudinary.com/dvowvfxfi/image/upload/v1697568837/KSMlogo-removebg-preview_fkru0z.webp" alt='Logo' width={250} height={250} />
                 </div>

@@ -1,5 +1,6 @@
 "use client";
 
+import { db } from "@/firebase/firebase";
 import { Modal } from "flowbite-react";
 import { useState } from "react";
 
@@ -36,11 +37,11 @@ export default function RV() {
   };
   const addToDB = async (info) => {
     try {
-    //   await db.collection("contact").add(info);
+      await db.collection("rendez_vous").add(info);
       console.log(info);
       setFormState(initForm);
  
-    //   window.alert("I will respond as soon as posible, thanks for contacting me!");
+      // window.alert("I will respond as soon as posible, thanks for contacting me!");
     } catch (err) {
       console.log(err);
     //   window.alert(
@@ -55,7 +56,7 @@ export default function RV() {
         className="w-52 bg-pilates px-3 py-2 flex items-center justify-center font-semibold text-center text-white rounded-lg ring-white ring-2 hover:shadow-lg hover:shadow-vert hover:scale-105 transtion-all duration-200 hover:ring-vert"
         onClick={() => props.setOpenModal("form-elements")}
       >
-        Prendre Rendez-Vous!
+        Prendre Rendez-Vous
       </button>
       <Modal
         show={props.openModal === "form-elements"}
@@ -67,13 +68,13 @@ export default function RV() {
         <Modal.Header className="bg-vert rounded-t-lg" />
         <Modal.Body className="bg-vert rounded-b-lg shadow-xl " >
         <form className="bg-vert flex-col flex items-center justify-center gap-2 m-2 p-2 ">
-                <p className="text-center text-xl text-white">Remplissez ce formulaire pour réserver</p>
+                <p className="text-center text-xl text-white mb-6">Remplis ce formulaire pour prendre rendez-vous!</p>
                 <div className="mb-2">
                   <input
                     className="placeholder-white bg-vert text-white rounded border-white p-2 hover:ring-2 hover:ring-white hover:shadow-lg hover:shadow-white focus:border-none"
                     name="username"
                     type="text"
-                    placeholder='Votre Nom'
+                    placeholder='Nom'
                     value={formState.username}
                     onChange={onChangeForm}
                   />
@@ -84,7 +85,7 @@ export default function RV() {
                     className="placeholder-white bg-vert text-white rounded border-white p-2 hover:ring-2 hover:ring-white hover:shadow-lg hover:shadow-white focus:border-none"
                     name="email"
                     type="email"
-                    placeholder='Votre Courriel'
+                    placeholder='Courriel'
                     value={formState.email}
                     onChange={onChangeForm}
                   />
@@ -95,8 +96,8 @@ export default function RV() {
                     name="consult"
                     className="placeholder-white bg-vert text-white rounded border-white p-2 hover:ring-2 hover:ring-white hover:shadow-lg hover:shadow-white focus:border-none"
                     rows="4"
-                    cols="40"
-                    placeholder='Indiquer moi le service désiré ainsi que votre disponibilité'
+                    cols="30"
+                    placeholder='Indique-moi le service qui t&#8217;intéresse ainsi que tes prochaines disponibilités...'
                     value={formState.consult}
                     onChange={onChangeForm}
                   />
