@@ -13,7 +13,7 @@ export const Footer = () => {
                 </div>
                 <Info className="sm:w-1/3" />
                 <div className="sm:w-1/3 flex flex-col items-center justify-center tecxt-center">
-                    <h2 className='text-xl font-semibold'>Services</h2>
+                    <h2 className='text-xl font-medium'>Services</h2>
                     <ul className='flex flex-col items-center justify-center'>
                         <Link href="/services#carte" className='hover:text-vert hover:scale-105'><li>À la carte</li></Link>
                         <Link href="/services#maternite" className='hover:text-vert hover:scale-105'><li>Maternité</li></Link>

@@ -95,7 +95,7 @@ const page = () => {
         </Link>
       </div>
       <p className="font-semibold text-pilates text-5xl text-center pb-10">
-        <span className={dancingScript.className}> Ose te laissez accompagner !</span>
+        <span className={dancingScript.className}> Ose te laisser accompagner !</span>
       </p>
     </div>
   );

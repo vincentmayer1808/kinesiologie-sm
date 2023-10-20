@@ -25,7 +25,7 @@ export const Contact = () => {
     setIsLoading(true);
     const { username, consult, email } = formState;
     if (username === "" || email === "" || consult === "") {
-      window.alert("Please, fill all fields!");
+      window.alert("Veuillez remplir tout les champs s'il vous plait.");
     } else {
       await addToDB(formState);
     }
@@ -34,20 +34,20 @@ export const Contact = () => {
   const addToDB = async (info) => {
     try {
         await db.collection("contact").add(info);
-      console.log(info);
+     
       setFormState(initForm);
 
-        window.alert("Message sent correctly");
+        window.alert("Message sent correctly.");
     } catch (err) {
-      console.log(err);
+    
         window.alert(
-          "The message could not be send"
+          "The message could not be send, please try again later."
         );
     }
   };
   return (
     <>
-      <form className="bg-pilates flex-col flex items-center justify-center gap-2 m-2 p-4 rounded shadow-lg shadow-black ">
+      <form className="bg-pilates flex-col flex items-center justify-center gap-2 m-2 p-4 rounded shadow-lg shadow-gray-500 ">
         <div className="mb-2">
           <input
             className="placeholder-white bg-pilates text-white rounded border-white p-2 hover:ring-2 hover:ring-white hover:shadow-xl hover:shadow-white focus:border-none"
