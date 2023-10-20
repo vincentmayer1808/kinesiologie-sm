@@ -29,7 +29,7 @@ export default function RV() {
     setIsLoading(true);
     const { username, consult, email } = formState;
     if (username === "" || email === "" || consult === "") {
-      window.alert("Please, fill all fields!");
+      window.alert("S'il vous plait, veuillez remplir tout les champs");
     } else {
       await addToDB(formState);
     }
@@ -38,15 +38,14 @@ export default function RV() {
   const addToDB = async (info) => {
     try {
       await db.collection("rendez_vous").add(info);
-      console.log(info);
       setFormState(initForm);
  
-      // window.alert("I will respond as soon as posible, thanks for contacting me!");
+      window.alert("Merci pour prendre rendez-vous!");
     } catch (err) {
-      console.log(err);
-    //   window.alert(
-    //     "An error ocurred and I couldn,t receive your message, please try again!"
-    //   );
+
+      window.alert(
+        "Une erreur s'est produite, veuillez essayer de nouveau!"
+      );
     }
   };
   return (
