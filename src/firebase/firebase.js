@@ -5,7 +5,7 @@ import 'firebase/compat/firestore';
 const apiKey=process.env.FB_APIKEY
 
 // Import the functions you need from the SDKs you need
-// import { getAnalytics } from "firebase/analytics";
+// import { getAnalytics, logEvent } from "firebase/analytics";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -25,4 +25,5 @@ const firebaseConfig = {
 const app = firebase.initializeApp(firebaseConfig);
 export const db = app.firestore();
 
-// const analytics = getAnalytics(app);
+// const analytics = getAnalytics();
+// logEvent(analytics, 'notification_received')
