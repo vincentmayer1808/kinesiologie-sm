@@ -35,6 +35,7 @@ export default function RV() {
     }
     setIsLoading(false);
   };
+  
   const addToDB = async (info) => {
     try {
       await db.collection("rendez_vous").add(info);

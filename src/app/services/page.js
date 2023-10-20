@@ -42,7 +42,7 @@ const page = () => {
         </div>
         <RV />
         <p>
-          *Un rabais peut s&#8217;appliquer pour la prise de plusieurs séances.
+          *Un rabais peut s&#8217;appliquer pour la prise de plusieurs Rencontres.
         </p>
         <p>*Membre de la Fédération des Kinésiologue du Québec (FKQ) (reçu disponible pour fin d&#8217;assurance)</p>
       </div>
@@ -52,7 +52,7 @@ const page = () => {
         </h3>
         <div className="flex flex-col lg:flex-row lg:h-5/6 xl:h-2/3 justify-evenly items-center gap-10 p-2">
           <div className="sm:w-2/3 lg:w-1/2 lg:h-full bg-vert p-6 flex flex-col justify-center items-center gap-2 rounded-lg shadow-lg shadow-gray-500 hover:shadow-xl hover:shadow-gray-500 hover:scale-105">
-            <h4 className="text-2xl text-rosekine font-semibold">L&#8217;ESSENTIEL </h4>
+            <h4 className="text-2xl text-rosekine font-semibold pb-4">L&#8217;ESSENTIEL </h4>
             <ul >
               <li>
                 <h5 className="font-medium">Rencontre Initiale</h5>
@@ -71,16 +71,16 @@ const page = () => {
               <li>
                 <h5 className="font-medium">Suivis</h5>
                 <ul className="list-inside list-disc pb-2">
-                  <li>3 séances de  10 minutes</li>
-                  <li className="list-none">Répartis sur la durée du forfait</li>
+                  <li>3 Rencontres de  10 minutes</li>
+                  <li className="list-none">Réparties sur la durée du forfait</li>
                 </ul>
               </li>
             </ul>
-            <p>
+            <p className="pb-4">
               Ce forfait permet d&#8217;adapter ton programme selon les symptômes
               qui peuvent survenir et les changements physiologiques liés à la
               grossesse.{" "}
-            </p>
+            </p >
             <RV />
           </div>
           <div className="sm:w-2/3 lg:w-1/2 lg:h-full bg-vert p-6 flex flex-col justify-center items-center gap-2 rounded-lg shadow-lg shadow-gray-500 hover:shadow-xl hover:shadow-gray-500 hover:scale-105">
@@ -110,8 +110,8 @@ const page = () => {
               <li>
                 <h5 className="font-medium">Suivis</h5>
                 <ul className="list-inside list-disc pb-2">
-                  <li>3 séances de 10 minutes</li>
-                  <li className="list-none">Répartis sur la durée du forfait</li>
+                  <li>3 Rencontres de 10 minutes</li>
+                  <li className="list-none">Réparties sur la durée du forfait</li>
                 </ul>
               </li>
             </ul>
@@ -149,12 +149,12 @@ const page = () => {
               <li>
                 <h5 className="font-medium">Suivis</h5>
                 <ul className="list-inside list-disc pb-2">
-                  <li>3 séances de 10 minutes</li>
-                  <li className="list-none">Répartis sur la durée du forfait</li>
+                  <li>3 Rencontres de 10 minutes</li>
+                  <li className="list-none">Réparties sur la durée du forfait</li>
                 </ul>
               </li>
             </ul>
-            <p>
+            <p className="pb-4">
               Ce forfait est idéal pour celles qui veulent optimiser leur santé abdominale et pelvienne par le biais de l&#8217;exercice et de l&#8217;éducation. Que ce soit pour la prévention ou aider à guérir certains symptômes (tels que les fuites ou une descente d&#8217;organe), ce programme est pour toi.
             </p>
             <RV />
@@ -182,8 +182,8 @@ const page = () => {
               <li>
                 <h5 className="font-medium">Suivis Hebdomadaires</h5>
                 <ul className="list-inside list-disc pb-2">
-                  <li>9 séances de  10 minutes</li>
-                  <li className="list-none">Répartis sur la durée du forfait</li>
+                  <li>9 Rencontres de  10 minutes</li>
+                  <li className="list-none">Réparties sur la durée du forfait</li>
                 </ul>
               </li>
             </ul>
@@ -200,7 +200,7 @@ const page = () => {
         </h3>
         <div className="flex flex-col lg:flex-row lg:h-5/6 xl:h-2/3 justify-evenly items-center gap-10 p-2">
           <div className="sm:w-2/3 lg:w-1/2 lg:h-full bg-vert p-6 flex flex-col justify-center items-center gap-2 rounded-lg shadow-lg shadow-gray-500 hover:shadow-xl hover:shadow-gray-500 hover:scale-105">
-            <h4 className="text-2xl text-rosekine font-semibold">EN ACTION</h4>
+            <h4 className="text-2xl text-rosekine font-semibold pb-4">EN ACTION</h4>
             <ul >
               <li>
                 <h5 className="font-medium">Rencontre Initiale</h5>
@@ -218,12 +218,12 @@ const page = () => {
               <li>
                 <h5 className="font-medium">Suivis</h5>
                 <ul className="list-inside list-disc pb-2">
-                  <li>6 séances de  10 minutes</li>
-                  <li className="list-none">Répartis sur la durée du forfait</li>
+                  <li>6 Rencontres de  10 minutes</li>
+                  <li className="list-none">Réparties sur la durée du forfait</li>
                 </ul>
               </li>
             </ul>
-            <p>
+            <p className="pb-4">
               Ce forfait est idéal pour ceux et celles qui veulent se mettre en action tout en ayant un suivi adapté. Il est conçu pour un accompagnement pendant 3 mois.
             </p>
             <RV />
@@ -251,8 +251,8 @@ const page = () => {
               <li>
                 <h5 className="font-medium">Suivis</h5>
                 <ul className="list-inside list-disc pb-2">
-                  <li>6 séances de  10 minutes</li>
-                  <li className="list-none">Répartis sur la durée du forfait</li>
+                  <li>6 Rencontres de  10 minutes</li>
+                  <li className="list-none">Réparties sur la durée du forfait</li>
                 </ul>
               </li>
             </ul>
