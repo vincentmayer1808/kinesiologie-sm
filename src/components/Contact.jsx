@@ -25,7 +25,7 @@ export const Contact = () => {
     setIsLoading(true);
     const { username, consult, email } = formState;
     if (username === "" || email === "" || consult === "") {
-      window.alert("Veuillez remplir tout les champs s'il vous plait.");
+      window.alert("S'il vous plait, veuillez remplir tout les champs.");
     } else {
       await addToDB(formState);
     }
@@ -37,11 +37,11 @@ export const Contact = () => {
      
       setFormState(initForm);
 
-        window.alert("Message sent correctly.");
+        window.alert("Merci de me contacter, je vous répondrai dès que possible!");
     } catch (err) {
     
         window.alert(
-          "The message could not be send, please try again later."
+          "Le message n'a pas pu être envoyé, veuillez réessayer plus tard."
         );
     }
   };
@@ -59,7 +59,6 @@ export const Contact = () => {
           />
         </div>
         <div className="mb-2">
-
           <input
             className="placeholder-white bg-pilates text-white rounded border-white p-2 hover:ring-2 hover:ring-white hover:shadow-xl hover:shadow-white focus:border-none"
             name="email"
@@ -70,7 +69,6 @@ export const Contact = () => {
           />
         </div>
         <div className="mb-2">
-
           <textarea
             name="consult"
             className="placeholder-white bg-pilates text-white rounded border-white p-2 hover:ring-2 hover:ring-white hover:shadow-xl hover:shadow-white focus:border-none"
@@ -91,7 +89,6 @@ export const Contact = () => {
           Envoyer
         </button>
       </form>
-
     </>
   )
 }
