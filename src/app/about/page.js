@@ -16,7 +16,7 @@ const page = () => {
         <div className="sm:w-1/2 flex flex-col justify-center items-center gap-2 text-center p-2">
           <h2 className=" text-2xl sm:text-4xl font-semibold text-vert"> Qui suis-je? </h2>
           <p >
-            Depuis toujours j&#8217;adore bouger et aider les gens. Avec mes études, j&#8217;ai compris davantage les bienfaits d&#8217;intégrer un style de vie actif. Maintenant, je souhaite t&#8217;aider à y parvenir parce que… non ce n&#8217;est pas facile!
+            Depuis toujours j&#8217;adore bouger et aider les gens. Avec mes études, j&#8217;ai compris davantage les bienfaits d&#8217;intégrer un style de vie actif. Maintenant, je souhaite vous aider à y parvenir parce que… non ce n&#8217;est pas facile!
           </p>
           <p >
             Pour moi, la <span className="text-pilates">kinésiologie</span> est le meilleur vaisseau pour partager le plaisir de bouger tout en intégrant certains principes de base de la psychologie comportementale et de la science du mouvement humain afin de créer une réelle différence dans la vie de mes client(e)s.
