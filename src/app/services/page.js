@@ -3,7 +3,7 @@ import { Services } from "@/components/Services";
 import Image from "next/image";
 import React from "react";
 import { dancingScript } from "../fonts";
-// className="text-2xl sm:text-4xl text-gris font-bold" 
+
 const page = () => {
   return (
     <div className="text-center">
