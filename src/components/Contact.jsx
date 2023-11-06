@@ -82,7 +82,7 @@ export const Contact = () => {
             className="placeholder-white bg-pilates text-white rounded border-white p-2 hover:ring-2 hover:ring-white hover:shadow-xl hover:shadow-white focus:border-none"
             rows="4"
             cols="30"
-            placeholder='Écris-moi ton message ici...'
+            placeholder='Écrivez-moi votre message ici...'
             value={formState.message}
             onChange={onChangeForm}
           />

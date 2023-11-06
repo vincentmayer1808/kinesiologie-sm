@@ -82,7 +82,7 @@ export default function RV() {
         <Modal.Header className="bg-vert rounded-t-lg" />
         <Modal.Body className="bg-vert rounded-b-lg shadow-xl " >
           <form className="bg-vert flex-col flex items-center justify-center gap-2 m-2 p-2 ">
-            <p className="text-center text-xl text-white mb-6">Remplis ce formulaire pour prendre rendez-vous!</p>
+            <p className="text-center text-xl text-white mb-6">Remplissez ce formulaire pour prendre rendez-vous!</p>
             <div className="mb-2">
               <input
                 className="placeholder-white bg-vert text-white rounded border-white p-2 hover:ring-2 hover:ring-white hover:shadow-lg hover:shadow-white focus:border-none"
@@ -111,7 +111,7 @@ export default function RV() {
                 className="placeholder-white bg-vert text-white rounded border-white p-2 hover:ring-2 hover:ring-white hover:shadow-lg hover:shadow-white focus:border-none"
                 rows="4"
                 cols="30"
-                placeholder='Indique-moi le service qui t&#8217;intéresse ainsi que tes prochaines disponibilités...'
+                placeholder='Indiquez-moi le service qui vous intéresse ainsi que vos prochaines disponibilités...'
                 value={formState.consult}
                 onChange={onChangeForm}
               />

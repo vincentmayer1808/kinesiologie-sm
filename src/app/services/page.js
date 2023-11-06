@@ -22,12 +22,12 @@ const page = () => {
       <div id="carte" className="flex flex-col justify-center items-center gap-4 p-6 pt-14">
         <h3 className="text-2xl font-semibold text-vert">LES SÉANCES À LA CARTE</h3>
         <p>
-          Ce forfait demande une rencontre Initiale au préalable afin
+          Ce forfait demande une rencontre initiale au préalable afin
           d&#8217;évaluer vos besoins et créer un programme adapté.{" "}
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-evenly gap-4">
           <div className="w-52 h-36 bg-vert p-6 flex flex-col items-center justify-center gap-2 rounded-lg shadow shadow-gray-500 hover:shadow-lg hover:shadow-gray-500 hover:scale-105">
-            <h4 className="text-lg">Rencontre Initiale + Création du programme : </h4>
+            <h4 className="text-lg">Rencontre initiale + Création du programme : </h4>
             <p>90 $ </p>
           </div>
           <div className="w-52 h-36 bg-vert p-6 flex flex-col items-center justify-center gap-2 rounded-lg shadow shadow-gray-500 hover:shadow-lg hover:shadow-gray-500 hover:scale-105">
@@ -42,7 +42,7 @@ const page = () => {
         </div>
         <RV />
         <p>
-          *Un rabais peut s&#8217;appliquer pour la prise de plusieurs Rencontres.
+          *Un rabais peut s&#8217;appliquer pour la prise de plusieurs rencontres.
         </p>
         <p>*Membre de la Fédération des Kinésiologue du Québec (FKQ) (reçu disponible pour fin d&#8217;assurance)</p>
       </div>
@@ -72,7 +72,7 @@ const page = () => {
                 <h5 className="font-medium">Suivis</h5>
                 <ul className="list-inside list-disc pb-2">
                   <li>3 Rencontres de  10 minutes</li>
-                  <li className="list-none">Réparties sur la durée du forfait</li>
+                  <li className="list-none">réparties sur la durée du forfait</li>
                 </ul>
               </li>
             </ul>
@@ -111,7 +111,7 @@ const page = () => {
                 <h5 className="font-medium">Suivis</h5>
                 <ul className="list-inside list-disc pb-2">
                   <li>3 Rencontres de 10 minutes</li>
-                  <li className="list-none">Réparties sur la durée du forfait</li>
+                  <li className="list-none">réparties sur la durée du forfait</li>
                 </ul>
               </li>
             </ul>
@@ -150,7 +150,7 @@ const page = () => {
                 <h5 className="font-medium">Suivis</h5>
                 <ul className="list-inside list-disc pb-2">
                   <li>3 Rencontres de 10 minutes</li>
-                  <li className="list-none">Réparties sur la durée du forfait</li>
+                  <li className="list-none">réparties sur la durée du forfait</li>
                 </ul>
               </li>
             </ul>
@@ -183,7 +183,7 @@ const page = () => {
                 <h5 className="font-medium">Suivis Hebdomadaires</h5>
                 <ul className="list-inside list-disc pb-2">
                   <li>9 Rencontres de 10 minutes</li>
-                  <li className="list-none">Réparties sur la durée du forfait</li>
+                  <li className="list-none">réparties sur la durée du forfait</li>
                 </ul>
               </li>
             </ul>
@@ -212,14 +212,14 @@ const page = () => {
               <li>
                 <h5 className="font-medium">Video Référencielle</h5>
                 <ul className="list-inside list-disc pb-2">
-                  <li>Video explicative du programme</li>
+                  <li>Vidéo explicative du programme</li>
                 </ul>
               </li>
               <li>
                 <h5 className="font-medium">Suivis</h5>
                 <ul className="list-inside list-disc pb-2">
                   <li>6 Rencontres de 10 minutes</li>
-                  <li className="list-none">Réparties sur la durée du forfait</li>
+                  <li className="list-none">réparties sur la durée du forfait</li>
                 </ul>
               </li>
             </ul>
@@ -252,7 +252,7 @@ const page = () => {
                 <h5 className="font-medium">Suivis</h5>
                 <ul className="list-inside list-disc pb-2">
                   <li>6 Rencontres de  10 minutes</li>
-                  <li className="list-none">Réparties sur la durée du forfait</li>
+                  <li className="list-none">réparties sur la durée du forfait</li>
                 </ul>
               </li>
             </ul>

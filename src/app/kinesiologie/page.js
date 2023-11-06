@@ -87,7 +87,7 @@ const page = () => {
           Un kinésiologue{" "}
         </h3>
         <p className="text-center w-2/3">
-        Est un professionnel de la santé qui vpus accompagne vers des objectifs précis. Il vous aide à intégrer un style de vie actif afin de réduire la sédentarité et favoriser une meilleure santé globale.
+        Est un professionnel de la santé qui vous accompagne vers des objectifs précis. Il vous aide à intégrer un style de vie actif afin de réduire la sédentarité et favoriser une meilleure santé globale.
         </p>
         <Link href="/about" className="p-2 mb-6 rounded ring-2 ring-vert hover:text-pilates hover:scale-105 hover:ring-pilates"
         >
