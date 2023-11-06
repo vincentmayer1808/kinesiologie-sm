@@ -1,6 +1,7 @@
 "use client"
 
-import { db } from '@/firebase/firebase';
+import addToDB from '@/helpers/addToDB';
+import axios from 'axios';
 import React, { useState } from 'react'
 
 export const Contact = () => {
@@ -8,7 +9,7 @@ export const Contact = () => {
   const initForm = {
     username: "",
     email: "",
-    consult: "",
+    message: "",
   };
 
   const [formState, setFormState] = useState(initForm);
@@ -23,28 +24,35 @@ export const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsLoading(true);
-    const { username, consult, email } = formState;
-    if (username === "" || email === "" || consult === "") {
+    const { username, message, email } = formState;
+    if (username === "" || email === "" || message === "") {
       window.alert("S'il vous plait, veuillez remplir tout les champs.");
     } else {
-      await addToDB(formState);
-    }
-    setIsLoading(false);
-  };
-  const addToDB = async (info) => {
-    try {
-        await db.collection("contact").add(info);
-     
-      setFormState(initForm);
+      try {
+
+        await addToDB(formState);
+        await axios.post(`/api/mail`, {
+          email,
+          username,
+          message
+        })
 
         window.alert("Merci de me contacter, je vous répondrai dès que possible!");
-    } catch (err) {
-    
+      } catch (err) {
+        console.log(err)
         window.alert(
           "Le message n'a pas pu être envoyé, veuillez réessayer plus tard."
         );
+      }
     }
-  };
+    setFormState(initForm);
+    setIsLoading(false);
+  }
+
+
+
+
+
   return (
     <>
       <form className="bg-pilates flex-col flex items-center justify-center gap-2 m-2 p-4 rounded shadow-lg shadow-gray-500 ">
@@ -70,12 +78,12 @@ export const Contact = () => {
         </div>
         <div className="mb-2">
           <textarea
-            name="consult"
+            name="message"
             className="placeholder-white bg-pilates text-white rounded border-white p-2 hover:ring-2 hover:ring-white hover:shadow-xl hover:shadow-white focus:border-none"
             rows="4"
             cols="30"
             placeholder='Écris-moi ton message ici...'
-            value={formState.consult}
+            value={formState.message}
             onChange={onChangeForm}
           />
         </div>

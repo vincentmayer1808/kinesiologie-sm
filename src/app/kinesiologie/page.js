@@ -25,7 +25,7 @@ const page = () => {
         <p className="text-pilates text-center">Vise à vivre une grossesse et un post-partum en toute sécurité et avec le moins d&#8217;inconforts possibles.</p>
         <div className="flex flex-col justify-center gap-4 items-center text-center pb-6">
           <p className=" w-2/3">
-          Dans cette étape cruciale de la vie, il est encore plus important de prendre soin de soi et de bouger de manière sécuritaire et adaptée. Adopter un style de vie actif va avoir des bénéfices pour la maman et le bébé. Un programme adapté permet, entre autres, d&#8217;éviter les blessures, de facilité la grossesse, l&#8217;accouchement, la récupération post-accouchement ainsi que de prévenir ou d&#8217;améliorer les douleurs causées par les compensations posturales liées à la maternité.
+          Dans cette étape cruciale de la vie, il est encore plus important de prendre soin de soi et de bouger de manière sécuritaire et adaptée. Adopter un style de vie actif va avoir des bénéfices pour la maman et le bébé. Un programme adapté permet, entre autres, d&#8217;éviter les blessures, de faciliter la grossesse, l&#8217;accouchement, la récupération post-accouchement ainsi que de prévenir ou d&#8217;améliorer les douleurs causées par les compensations posturales liées à la maternité.
           </p>
           <Link
             href="/services#maternite"
@@ -44,7 +44,7 @@ const page = () => {
           Vise à optimiser l&#8217;efficience des muscles du plancher pelvien.{" "}
         </p>
         <p className="w-2/3 text-center">
-        Prendre en charge sa santé abdominale et pelvienne est cruciale afin d&#8217;améliorer ou prévenir certains symptômes. Tu vis avec des fuites urinaires, des douleurs pelviennes, une vessie hyperactive, de la constipation ou autres - Consulter en kinésiologie t&#8217;aidera à réduire tes symptômes afin d&#8217;améliorer ta qualité de vie.
+        Prendre en charge sa santé abdominale et pelvienne est cruciale afin d&#8217;améliorer ou prévenir certains symptômes. Vous vivez avec des fuites urinaires, des douleurs pelviennes, une vessie hyperactive, de la constipation ou autres - Consulter en kinésiologie vous aidera à réduire vos symptômes afin d&#8217;améliorer votre qualité de vie.
         </p>
 
         <Link href="/services#pelvienne" className="p-2 mb-6 rounded ring-2 ring-vert hover:text-pilates hover:scale-105 hover:ring-pilates">
@@ -75,7 +75,7 @@ const page = () => {
           S&#8217;entrainer pour soulager les inconforts.
         </h3>
         <p className="text-center w-2/3">
-        Certaines douleurs récurrentes peuvent être liées à notre travail et/ou notre posture. Un entrainement spécifique aidera, entre autres, à relâcher certaines tensions et à rééquilibrer ta musculature ce qui soulagera tes zones douloureuses. Avec son approche globale, un kinésiologue peut aider significativement sur le long terme à vivre une vie avec moins de douleur.
+        Certaines douleurs récurrentes peuvent être liées à notre travail et/ou notre posture. Un entrainement spécifique aidera, entre autres, à relâcher certaines tensions et à rééquilibrer votre musculature ce qui soulagera vos zones douloureuses. Avec son approche globale, un kinésiologue peut vous aider significativement sur le long terme à vivre une vie avec moins de douleur.
         </p>
         <Link href="/services#carte" className="p-2 mb-6 rounded ring-2 ring-vert hover:text-pilates hover:scale-105 hover:ring-pilates"
         >
@@ -87,7 +87,7 @@ const page = () => {
           Un kinésiologue{" "}
         </h3>
         <p className="text-center w-2/3">
-        Est un professionnel de la santé qui t&#8217;accompagne vers des objectifs précis. Il t&#8217;aide à intégrer un style de vie actif afin de réduire la sédentarité et favoriser une meilleure santé globale.
+        Est un professionnel de la santé qui vpus accompagne vers des objectifs précis. Il vous aide à intégrer un style de vie actif afin de réduire la sédentarité et favoriser une meilleure santé globale.
         </p>
         <Link href="/about" className="p-2 mb-6 rounded ring-2 ring-vert hover:text-pilates hover:scale-105 hover:ring-pilates"
         >
@@ -95,7 +95,7 @@ const page = () => {
         </Link>
       </div>
       <p className="font-semibold text-pilates text-5xl text-center pb-10">
-        <span className={dancingScript.className}> Ose te laisser accompagner !</span>
+        <span className={dancingScript.className}> Osez vous laisser accompagner !</span>
       </p>
     </div>
   );
