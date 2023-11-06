@@ -73,7 +73,7 @@ export const HomePage = () => {
       </div>
       <div className="p-6 w-full bg-gris flex flex-col justify-center items-center gap-2 py-4 text-center">
         <p className="text-white text-4xl font-semibold">
-          Fais appel à ton Kinésiologue dès aujourd&#8217;hui!
+          Faites appel à votre Kinésiologue dès aujourd&#8217;hui!
         </p>
         <Link
           href="/contact"

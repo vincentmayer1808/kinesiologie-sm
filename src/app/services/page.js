@@ -77,7 +77,7 @@ const page = () => {
               </li>
             </ul>
             <p className="pb-4">
-              Ce forfait permet d&#8217;adapter ton programme selon les symptômes
+              Ce forfait permet d&#8217;adapter votre programme selon les symptômes
               qui peuvent survenir et les changements physiologiques liés à la
               grossesse.{" "}
             </p >
@@ -155,7 +155,7 @@ const page = () => {
               </li>
             </ul>
             <p className="pb-4">
-              Ce forfait est idéal pour celles qui veulent optimiser leur santé abdominale et pelvienne par le biais de l&#8217;exercice et de l&#8217;éducation. Que ce soit pour la prévention ou aider à guérir certains symptômes (tels que les fuites ou une descente d&#8217;organe), ce programme est pour toi.
+              Ce forfait est idéal pour celles qui veulent optimiser leur santé abdominale et pelvienne par le biais de l&#8217;exercice et de l&#8217;éducation. Que ce soit pour la prévention ou aider à guérir certains symptômes (tels que les fuites ou une descente d&#8217;organe), ce programme est pour vous.
             </p>
             <RV />
           </div>
@@ -171,10 +171,10 @@ const page = () => {
                 </ul>
               </li>
               <li>
-                <h5 className="font-medium">Videos Référencielles</h5>
+                <h5 className="font-medium">Vidéos Référentielles</h5>
                 <ul className="list-inside list-disc pb-2">
                   <li>
-                    Vidéo explicative de chacun de tes programmes (3)
+                    Vidéo explicative de chacun de vos programmes (3)
                   </li>
                   <li>Série de vidéos (12) sur la santé abdominale et pelvienne</li>
                 </ul>
@@ -182,13 +182,13 @@ const page = () => {
               <li>
                 <h5 className="font-medium">Suivis Hebdomadaires</h5>
                 <ul className="list-inside list-disc pb-2">
-                  <li>9 Rencontres de  10 minutes</li>
+                  <li>9 Rencontres de 10 minutes</li>
                   <li className="list-none">Réparties sur la durée du forfait</li>
                 </ul>
               </li>
             </ul>
             <p>
-              Ce forfait permet de progresser à son rythme afin de constater de réels changements sur sa santé abdominale et pelvienne. Il aide à prévenir et/ou guérir certains symptômes (tels que les fuites ou une descente d&#8217;organe) tout en changeant progressivement certaines habitudes de vie pour un maintien des effets à très long terme.
+              Ce forfait permet de progresser à votre rythme afin de constater de réels changements sur votre santé abdominale et pelvienne. Il aide à prévenir et/ou guérir certains symptômes (tels que les fuites ou une descente d&#8217;organe) tout en changeant progressivement certaines habitudes de vie pour un maintien des effets à très long terme.
             </p>
             <RV />
           </div>
@@ -218,7 +218,7 @@ const page = () => {
               <li>
                 <h5 className="font-medium">Suivis</h5>
                 <ul className="list-inside list-disc pb-2">
-                  <li>6 Rencontres de  10 minutes</li>
+                  <li>6 Rencontres de 10 minutes</li>
                   <li className="list-none">Réparties sur la durée du forfait</li>
                 </ul>
               </li>
