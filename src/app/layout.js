@@ -5,11 +5,6 @@ import { montserrat } from './fonts'
 import Head from 'next/head'
 import Gtag from '@/components/Gtag'
 
-
-// import { Montserrat, Dancing_Script } from 'next/font/google'
-// const montserrat = Montserrat({ subsets: ['latin'] })
-// const dancingScript = Dancing_Script({subsets: ['latin']})
-
 export const metadata = {
   title: 'Kinesiologie SM',
   description: 'Vivez les bienfaits de l$#8217;activité physique au quotidien avec une approche individualisée et humaine! Prenez rendez-vous de kinésiologie a Mont-Tremblant! ',
@@ -18,7 +13,6 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="fr">
-  
       
       <Head>
         <Gtag/>
