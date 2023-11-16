@@ -15,9 +15,10 @@ export default function RootLayout({ children }) {
     <html lang="fr">
       
       <Head>
-        <Gtag/>
+        
         <link href="https://db.onlinewebfonts.com/c/1d4d7dd348a7632d33c193edf4827f87?family=Biome+W04+Light" rel="stylesheet" />
       </Head>
+      <Gtag/>
       <body className={montserrat.className}>
 
         <NavBar className="text-gris"/>
